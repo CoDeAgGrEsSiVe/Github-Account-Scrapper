@@ -1,0 +1,16 @@
+import urllib.request
+
+#https://github.com/CoDeAgGrEsSiVe
+
+class web_scraper:
+    def url_item(self, search_item):
+        self.search = search_item
+        self.url = "https://github.com/"
+        self.add_url = self.url + self.search
+        self.opener = urllib.request.urlopen(self.add_url).read()
+        self.decoder = self.opener.decode("utf-8")
+        
+        return self.decoder
+    
+search = web_scraper()
+exec('print(search.url_item("CoDeAgGrEsSiVe"))')

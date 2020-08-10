@@ -1,2 +1,2 @@
 # Github-Account-Scrapper
-Gets any available account available
+Gets any available github account
